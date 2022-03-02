@@ -1,0 +1,12 @@
+@import 'variable';
+@import 'component';
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/IMG_4373.JPG') no-repeat center / cover;
+  height: 70vh;
+}

@@ -1,0 +1,37 @@
+.abilityCard {
+  box-shadow: 5px 5px 10px rgba(43, 57, 70, 0.5);
+  transition: box-shadow 0.5s;
+
+  i {
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 15px rgba(43, 57, 70, 0.5);
+
+    i {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.resumeCard {
+  padding-left: 1.5rem;
+  border-left: 5px solid $secondary;
+  transition: border 0.5s;
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  &_date {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #ccc;
+  }
+}
