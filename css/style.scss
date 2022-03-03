@@ -10,3 +10,25 @@ ul {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/IMG_4373.JPG') no-repeat center / cover;
   height: 70vh;
 }
+
+footer {
+  background-color: #aaa;
+
+  a {
+    color: #000;
+    font-size: 1.25rem;
+    transition: color .3s;
+
+    i {
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      color: rgb(57, 57, 57);
+
+      i {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
