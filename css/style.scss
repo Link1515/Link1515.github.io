@@ -1,14 +1,33 @@
 @import 'variable';
 @import 'component';
 
+:root {
+  scroll-padding-top: 56px;
+}
+
+body {
+  padding-top: 56px;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
 
+.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/IMG_4373.JPG') no-repeat center / cover;
   height: 70vh;
+}
+
+#about {
+  background-image: linear-gradient(20deg, $primary 50%, transparent 50%);
 }
 
 footer {
