@@ -33,20 +33,15 @@ ul {
     color: #fff;
     position: absolute;
     top: 50%;
-    right: 20%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .avatar {
   height: 500px;
-  object-fit: cover
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .avatar {
-    width: 100%;
-  }
+  object-fit: cover;
+  max-width: 100%;
 }
 
 footer {
