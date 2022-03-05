@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap/dist/bootstrap.min.css" />
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#about">ABOUT</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#abilities">ABILITIES</a>
@@ -65,7 +65,14 @@
           </div>
           <div class="col-md-6">
             <h4 class="text-title">林意倫 LIN YI-LUN</h4>
-            <p></p>
+            <p>
+              大學畢業後，在工作之餘從網路上接觸到前端技術，開始喜歡去看相關技術文章、影片，並嘗試自己動手編碼，漸漸對前端領域產生濃厚的興趣，隨後報名勞動部勞動力發展署-泰山前端網頁開發技術班，在受訓期間建立良好的程式語言基礎，更學習前端框架、
+              後端技術、資料庫技術，最後以優異成績結訓。
+            </p>
+            <p>
+              目前能夠使用 Vue.js 框架製作前端，Node.js 與 Express.js 搭建後端伺服器，搭配 MongoDB
+              作為資料庫，開發出功能健全的網站 <a class="btn btn-secondary" href="#portfolio">我的專題</a>
+            </p>
           </div>
         </div>
       </div>
@@ -194,14 +201,24 @@
           <div class="col-10 col-md-9 mx-auto">
             <div class="portfolioCard card mb-3">
               <div class="row g-0">
-                <a class="col-lg-5 portfolioCard_imgBox" href="https://link1515.github.io/wda-final-project/" target="_blank">
-                  <img src="./images/portfolio/eTableTopGame.png" class="img-fluid rounded-start">
-                </a>
+                <div class="col-lg-5 portfolioCard_imgBox">
+                  <img src="./images/portfolio/eTableTopGame.png" class="img-fluid rounded-start" />
+                  <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                    <a
+                      class="btn btn-outline-light"
+                      href="https://link1515.github.io/wda-final-project/"
+                      target="_blank"
+                    >
+                      Go to Page
+                    </a>
+                  </div>
+                </div>
                 <div class="col-lg-7">
                   <div class="card-body h-100 d-flex flex-column">
                     <h5 class="card-title">易桌遊 - 桌遊輔助網站</h5>
                     <p class="card-text">
-                      專為陣營類桌遊設計的輔助網站，可以協助桌遊玩家擔任主持人，播放語音與執行輔助功能(標記、查驗、多選一等功能)，並以 Socket.io 達到所有玩家同步。
+                      專為陣營類桌遊設計的輔助網站，可以協助桌遊玩家擔任主持人，播放語音與執行輔助功能(標記、查驗、多選一等功能)，並以
+                      Socket.io 達到所有玩家同步。
                     </p>
                     <div class="text-center mt-auto">
                       <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">SCSS</span>
@@ -216,7 +233,7 @@
                   <div class="row mx-2">
                     <div class="col-md-6">
                       <h5 class="fw-bold">前端</h5>
-                      <ul class="ps-3" style="list-style: inside;">
+                      <ul class="ps-3" style="list-style: inside">
                         <li>Vue 前端框架搭配 primeVue UI</li>
                         <li>Vuex 管理前端狀態</li>
                         <li>Axios 向後端伺服器請求資料</li>
@@ -227,7 +244,7 @@
                     </div>
                     <div class="col-md-6">
                       <h5 class="fw-bold">後端</h5>
-                      <ul class="ps-3" style="list-style: inside;">
+                      <ul class="ps-3" style="list-style: inside">
                         <li>Node.js 搭配 Express.js 與 Socket.io 建立伺服器</li>
                         <li>Socket.io 同步所有玩家狀態</li>
                         <li>MongoDB 作為後端資料庫，管理會員信息、遊戲信息、回報信息</li>
@@ -243,9 +260,14 @@
         <div class="row g-5">
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a class="portfolioCard_imgBox" href="https://link1515.github.io/vue-pomodoro/" target="_blank">
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/pomodoro.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a class="btn btn-outline-light" href="https://link1515.github.io/vue-pomodoro/" target="_blank">
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">番茄鐘 pomodoro</h5>
                 <p class="card-text">
@@ -264,17 +286,23 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://link1515.github.io/homework_trainingCenter/CSS/08.%E7%B6%B2%E9%A0%81%E5%88%BB%E6%9D%BF/"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/AKIDS.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://link1515.github.io/homework_trainingCenter/CSS/08.%E7%B6%B2%E9%A0%81%E5%88%BB%E6%9D%BF/"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">AKIDS - 幼稚園網站</h5>
                 <p class="card-text">
-                  從 TemplateMonster 網站中，挑選樣板，在不使用 UI 框架(如: bootstrap 等)環境下，刻出相同版面，此外也運用許多 JavaScript 套件製作輪播圖、動畫......等。
+                  從 TemplateMonster 網站中，挑選樣板，在不使用 UI 框架(如: bootstrap
+                  等)環境下，刻出相同版面，此外也運用許多 JavaScript 套件製作輪播圖、動畫......等。
                 </p>
                 <div class="text-center mt-auto">
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">HTML</span>
@@ -286,17 +314,23 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://github.com/Link1515/linebot-volleyballCourtFinding"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/linebot.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://github.com/Link1515/linebot-volleyballCourtFinding"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">linebot - 超級排球場</h5>
                 <p class="card-text">
-                  在 Node.js 環境下，搭配 Linebot 套件，製作 Line 機器人。此機器人能以用戶的位置為基準點，返回最多 5 個距離最近的排球場。
+                  在 Node.js 環境下，搭配 Linebot 套件，製作 Line 機器人。此機器人能以用戶的位置為基準點，返回最多 5
+                  個距離最近的排球場。
                 </p>
                 <div class="text-center mt-auto">
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">Linebot</span>
@@ -309,13 +343,18 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://link1515.github.io/homework_trainingCenter/JS/05.%E6%89%93%E6%AE%AD%E5%B1%8D/"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/planeGame.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://link1515.github.io/homework_trainingCenter/JS/05.%E6%89%93%E6%AE%AD%E5%B1%8D/"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">飛機遊戲</h5>
                 <p class="card-text">
@@ -331,17 +370,23 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://link1515.github.io/homework_trainingCenter/JS/06.%E7%BF%BB%E7%89%8C/"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/flagGame.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://link1515.github.io/homework_trainingCenter/JS/06.%E7%BF%BB%E7%89%8C/"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">各國國旗學習平台</h5>
                 <p class="card-text">
-                  用 jQuery 打造的翻牌遊戲，以國旗配對國名，同時紀錄通關時間與配對次數。當配對成功時會播放語音，念出國家的中文名稱與英文名稱。
+                  用 jQuery
+                  打造的翻牌遊戲，以國旗配對國名，同時紀錄通關時間與配對次數。當配對成功時會播放語音，念出國家的中文名稱與英文名稱。
                 </p>
                 <div class="text-center mt-auto">
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">HTML</span>
@@ -353,17 +398,23 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://link1515.github.io/homework_trainingCenter/JS/04.%E6%89%93%E5%9C%B0%E9%BC%A0/index.html"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/findQ.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://link1515.github.io/homework_trainingCenter/JS/04.%E6%89%93%E5%9C%B0%E9%BC%A0/index.html"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">FindQ</h5>
                 <p class="card-text">
-                  用 jQuery 製作的小遊戲，在有限的時間內，從眾多的 O 中尋找唯一的 Q。難度一共分為簡單、普通、困難，且每個難度都有自己的計分榜。
+                  用 jQuery 製作的小遊戲，在有限的時間內，從眾多的 O 中尋找唯一的
+                  Q。難度一共分為簡單、普通、困難，且每個難度都有自己的計分榜。
                 </p>
                 <div class="text-center mt-auto">
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">HTML</span>
@@ -375,17 +426,23 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://link1515.github.io/homework_trainingCenter/JS/03.%E9%A1%8F%E8%89%B2%E9%81%B8%E6%93%87%E5%99%A8/%E4%BD%9C%E6%A5%AD_%E9%A1%8F%E8%89%B2%E9%81%B8%E6%93%87%E5%99%A8.html"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/colorPicker.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://link1515.github.io/homework_trainingCenter/JS/03.%E9%A1%8F%E8%89%B2%E9%81%B8%E6%93%87%E5%99%A8/%E4%BD%9C%E6%A5%AD_%E9%A1%8F%E8%89%B2%E9%81%B8%E6%93%87%E5%99%A8.html"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">顏色選擇器</h5>
                 <p class="card-text">
-                  用原生的 JavaScript 製作的顏色選擇器，有單色、線性漸層、逕向漸層三種模式，每個模式都可以用拉動範圍的方式進行顏色調整。
+                  用原生的 JavaScript
+                  製作的顏色選擇器，有單色、線性漸層、逕向漸層三種模式，每個模式都可以用拉動範圍的方式進行顏色調整。
                 </p>
                 <div class="text-center mt-auto">
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">HTML</span>
@@ -397,13 +454,18 @@
           </div>
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
-              <a
-                class="portfolioCard_imgBox"
-                href="https://link1515.github.io/homework_trainingCenter/JS/02.%E6%99%82%E9%90%98/%E4%BD%9C%E6%A5%AD_%E6%99%82%E9%90%98.html"
-                target="_blank"
-              >
+              <div class="portfolioCard_imgBox">
                 <img src="./images/portfolio/clock.png" class="card-img-top" />
-              </a>
+                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
+                  <a
+                    class="btn btn-outline-light"
+                    href="https://link1515.github.io/homework_trainingCenter/JS/02.%E6%99%82%E9%90%98/%E4%BD%9C%E6%A5%AD_%E6%99%82%E9%90%98.html"
+                    target="_blank"
+                  >
+                    Go to Page
+                  </a>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">時鐘</h5>
                 <p class="card-text">
@@ -421,13 +483,40 @@
       </div>
     </div>
 
+    <!-- contact -->
+    <div id="contact" class="py-5">
+      <div class="container">
+        <h1 class="text-center mb-5 pb-3" style="border-bottom: 1px solid #000">CONTACT</h1>
+        <div class="row justify-content-center">
+          <div class="col-5 col-md-3 col-lg-2">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-header">Github</div>
+              <a class="contactLink card-body" href="https://github.com/Link1515" target="_blank">
+                <p class="card-text text-center">
+                  <i class="fa-brands fa-github"></i>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-5 col-md-3 col-lg-2">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-header">Email</div>
+              <a class="contactLink card-body" href="mailto: h26281660@gmail.com">
+                <p class="card-text text-center">
+                  <i class="fa-solid fa-envelope"></i>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <footer class="text-center py-3">
-      <ul class="d-flex justify-content-center gap-2 mb-1">
-        <li><a href="https://github.com/Link1515" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="mailto: h26281660@gmail.com"><i class="fa-solid fa-envelope"></i></a></i></li>
-      </ul>
       <span class="text-light">&copy; Copyright 2022 by LIN YI-LUN</span>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
