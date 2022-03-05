@@ -44,35 +44,47 @@
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">PORTFOLIO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- banner -->
-    <div class="banner"></div>
+    <div class="banner">
+      <!-- <div class="banner_txt">
+        <h1>前端工程師</h1>
+        <h2>Frontend Developer</h2>
+      </div> -->
+    </div>
 
     <!-- about -->
     <div id="about" class="py-4">
       <div class="container">
         <h1 class="text-center mb-5 pb-3" style="border-bottom: 1px solid #000">ABOUT</h1>
         <div class="row">
-          <div class="col-md-6 text-center">
-            <img src="./images/IMG_9251.png" style="height: 500px" />
+          <div class="col-md-6 text-center mb-5 mb-md-0">
+            <img class="avatar" src="./images/IMG_9251.png" />
           </div>
           <div class="col-md-6">
-            <h4 class="text-title">林意倫 LIN YI-LUN</h4>
+            <h4 class="text-title fw-bold">林意倫 LIN YI-LUN</h4>
             <p>
-              大學畢業後，在工作之餘從網路上接觸到前端技術，開始喜歡去看相關技術文章、影片，並嘗試自己動手編碼，漸漸對前端領域產生濃厚的興趣，隨後報名勞動部勞動力發展署-泰山前端網頁開發技術班，在受訓期間建立良好的程式語言基礎，更學習前端框架、
-              後端技術、資料庫技術，最後以優異成績結訓。
+              在大學期間接觸過程式設計的課程，於是產生了濃厚的興趣，大學畢業後，在工作期間思考未來職涯的規劃，決定重拾對程式的熱情，轉職前端工程師。
             </p>
             <p>
-              目前能夠使用 Vue.js 框架製作前端，Node.js 與 Express.js 搭建後端伺服器，搭配 MongoDB
-              作為資料庫，開發出功能健全的網站 <a class="btn btn-secondary" href="#portfolio">我的專題</a>
+              隨後參與了前端網頁開發技術的專業課程，在半年的訓練中習得了 HTML、CSS、JavaScript 及 Vue.js 等技術，能使用
+              Node.js 與 MongoDB 建置後端資料庫，並部屬於 heroku 整合前後端網頁。
             </p>
+            <p>
+              前端開發技術日新月異，需要透過不斷地學習以及經驗累積，期許自己持續不斷精進技術，迎接未來各種挑戰，成為與時俱進的前端工程師。
+            </p>
+            <div>
+              <a class="contactLink" href="https://github.com/Link1515" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a class="contactLink" href="mailto: h26281660@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +94,7 @@
     <div id="abilities" class="py-5 bg-primary">
       <div class="container">
         <h1 class="text-center mb-5 pb-3 text-light" style="border-bottom: 1px solid #fff">ABILITIES</h1>
-        <div class="row g-5">
+        <div class="row gy-5">
           <div class="col-10 col-md-7 col-lg-4 mx-auto">
             <div class="abilityCard py-3 h-100 bg-white text-center rounded">
               <h3 class="text-title fw-bold mb-3">DESIGN</h3>
@@ -135,25 +147,9 @@
             <div class="resumeCard mb-5">
               <h4>勞動部勞動力發展署 泰山前端網頁開發技術班</h4>
               <p class="resumeCard_date">2021 / 09 ~ 2022 / 03</p>
-              <h5 class="fw-bold">平面設計</h5>
-              <ul>
-                <li>Photoshop / Illustrator / Figma</li>
-              </ul>
-              <h5 class="fw-bold">前端技術</h5>
-              <ul>
-                <li>HTML / CSS / JavaScript</li>
-                <li>RWD 響應式網站設計</li>
-                <li>AJAX 技術</li>
-                <li>Vue.js</li>
-              </ul>
-              <h5 class="fw-bold">後端技術</h5>
-              <ul>
-                <li>Node.js / Express.js</li>
-                <li>MongoDB 資料庫管理</li>
-              </ul>
             </div>
             <div class="resumeCard mb-5">
-              <h4>台灣科技大學 機械工程系</h4>
+              <h4>臺灣科技大學 機械工程系</h4>
               <p class="resumeCard_date">2016 / 09 ~ 2020 / 01</p>
               <h5 class="fw-bold">善於邏輯思考與數理計算</h5>
               <ul>
@@ -185,7 +181,6 @@
             <div class="resumeCard mb-4">
               <h4>English</h4>
               <p class="mb-1">TOEFL ibt: 90</p>
-              <p>R24 L24 S20 W22</p>
             </div>
           </div>
         </div>
@@ -196,11 +191,10 @@
     <div id="portfolio" class="py-5 bg-primary">
       <div class="container">
         <h1 class="text-center mb-5 pb-3 text-light" style="border-bottom: 1px solid #fff">PORTFOLIO</h1>
-        <h2 class="text-light text-center mb-3">專題</h2>
         <div class="row mb-5">
-          <div class="col-10 col-md-9 mx-auto">
+          <div class="col-12 mx-auto">
             <div class="portfolioCard card mb-3">
-              <div class="row g-0">
+              <div class="row g-0 justify-content-evenly pt-5">
                 <div class="col-lg-5 portfolioCard_imgBox">
                   <img src="./images/portfolio/eTableTopGame.png" class="img-fluid rounded-start" />
                   <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
@@ -213,12 +207,12 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-5">
                   <div class="card-body h-100 d-flex flex-column">
-                    <h5 class="card-title">易桌遊 - 桌遊輔助網站</h5>
-                    <p class="card-text">
+                    <h5 class="card-title fw-bold">易桌遊 - 桌遊輔助網站</h5>
+                    <p class="card-text" style="line-height: 2.5rem">
                       專為陣營類桌遊設計的輔助網站，可以協助桌遊玩家擔任主持人，播放語音與執行輔助功能(標記、查驗、多選一等功能)，並以
-                      Socket.io 達到所有玩家同步。
+                      Socket.io 達到所有玩家同步，有效優化桌遊玩家使用者體驗。
                     </p>
                     <div class="text-center mt-auto">
                       <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">SCSS</span>
@@ -229,9 +223,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-10 mx-auto mt-4">
-                  <div class="row mx-2">
-                    <div class="col-md-6">
+                <div class="col-12 mx-auto mt-4">
+                  <div class="row mx-2 justify-content-evenly">
+                    <div class="col-md-5">
                       <h5 class="fw-bold">前端</h5>
                       <ul class="ps-3" style="list-style: inside">
                         <li>Vue 前端框架搭配 primeVue UI</li>
@@ -242,7 +236,7 @@
                         <li>自製遊戲功能</li>
                       </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                       <h5 class="fw-bold">後端</h5>
                       <ul class="ps-3" style="list-style: inside">
                         <li>Node.js 搭配 Express.js 與 Socket.io 建立伺服器</li>
@@ -256,7 +250,6 @@
             </div>
           </div>
         </div>
-        <h2 class="text-light text-center mb-3">小專案</h2>
         <div class="row g-5">
           <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
             <div class="portfolioCard card h-100">
@@ -269,7 +262,7 @@
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">番茄鐘 pomodoro</h5>
+                <h5 class="card-title fw-bold">番茄鐘 Pomodoro</h5>
                 <p class="card-text">
                   參考他人設計稿，並以 Vue cli 開發番茄鐘網站，其中使用 Vue 組件間通信、PWA 技術、chart.js 套件。
                 </p>
@@ -277,8 +270,6 @@
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">SCSS</span>
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">PUG</span>
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">Vue.js</span>
-                  <br />
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">bootstrapVue</span>
                   <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">Node.js</span>
                 </div>
               </div>
@@ -299,7 +290,7 @@
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">AKIDS - 幼稚園網站</h5>
+                <h5 class="card-title fw-bold">AKIDS - 幼稚園網站</h5>
                 <p class="card-text">
                   從 TemplateMonster 網站中，挑選樣板，在不使用 UI 框架(如: bootstrap
                   等)環境下，刻出相同版面，此外也運用許多 JavaScript 套件製作輪播圖、動畫......等。
@@ -327,7 +318,7 @@
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">linebot - 超級排球場</h5>
+                <h5 class="card-title fw-bold">LineBot - 超級排球場</h5>
                 <p class="card-text">
                   在 Node.js 環境下，搭配 Linebot 套件，製作 Line 機器人。此機器人能以用戶的位置為基準點，返回最多 5
                   個距離最近的排球場。
@@ -356,7 +347,7 @@
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">飛機遊戲</h5>
+                <h5 class="card-title fw-bold">射擊遊戲</h5>
                 <p class="card-text">
                   用 jQuery 打造的小遊戲，利用滑鼠操作飛機，並擊落敵方飛機。每擊落一架就加一分，最後會顯示歷史最高分。
                 </p>
@@ -383,7 +374,7 @@
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">各國國旗學習平台</h5>
+                <h5 class="card-title fw-bold">國旗學習翻牌遊戲</h5>
                 <p class="card-text">
                   用 jQuery
                   打造的翻牌遊戲，以國旗配對國名，同時紀錄通關時間與配對次數。當配對成功時會播放語音，念出國家的中文名稱與英文名稱。
@@ -411,7 +402,7 @@
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">FindQ</h5>
+                <h5 class="card-title fw-bold">FindQ</h5>
                 <p class="card-text">
                   用 jQuery 製作的小遊戲，在有限的時間內，從眾多的 O 中尋找唯一的
                   Q。難度一共分為簡單、普通、困難，且每個難度都有自己的計分榜。
@@ -424,97 +415,13 @@
               </div>
             </div>
           </div>
-          <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
-            <div class="portfolioCard card h-100">
-              <div class="portfolioCard_imgBox">
-                <img src="./images/portfolio/colorPicker.png" class="card-img-top" />
-                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
-                  <a
-                    class="btn btn-outline-light"
-                    href="https://link1515.github.io/homework_trainingCenter/JS/03.%E9%A1%8F%E8%89%B2%E9%81%B8%E6%93%87%E5%99%A8/%E4%BD%9C%E6%A5%AD_%E9%A1%8F%E8%89%B2%E9%81%B8%E6%93%87%E5%99%A8.html"
-                    target="_blank"
-                  >
-                    Go to Page
-                  </a>
-                </div>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">顏色選擇器</h5>
-                <p class="card-text">
-                  用原生的 JavaScript
-                  製作的顏色選擇器，有單色、線性漸層、逕向漸層三種模式，每個模式都可以用拉動範圍的方式進行顏色調整。
-                </p>
-                <div class="text-center mt-auto">
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">HTML</span>
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">CSS</span>
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">JavaScript</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-6 col-lg-4 mx-auto mx-md-0">
-            <div class="portfolioCard card h-100">
-              <div class="portfolioCard_imgBox">
-                <img src="./images/portfolio/clock.png" class="card-img-top" />
-                <div class="portfolioCard_imgMask d-flex justify-content-center align-items-center">
-                  <a
-                    class="btn btn-outline-light"
-                    href="https://link1515.github.io/homework_trainingCenter/JS/02.%E6%99%82%E9%90%98/%E4%BD%9C%E6%A5%AD_%E6%99%82%E9%90%98.html"
-                    target="_blank"
-                  >
-                    Go to Page
-                  </a>
-                </div>
-              </div>
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">時鐘</h5>
-                <p class="card-text">
-                  以 Minecraft 遊戲中的時鐘為基礎設計的時鐘，最大的特色在時針部分是以白天和黑色的顏色來表示。
-                </p>
-                <div class="text-center mt-auto">
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">HTML</span>
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">CSS</span>
-                  <span class="badge rounded-pill bg-primary py-2 px-3 mb-2">JavaScript</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- contact -->
-    <div id="contact" class="py-5">
-      <div class="container">
-        <h1 class="text-center mb-5 pb-3" style="border-bottom: 1px solid #000">CONTACT</h1>
-        <div class="row justify-content-center">
-          <div class="col-5 col-md-3 col-lg-2">
-            <div class="card text-white bg-primary mb-3">
-              <div class="card-header">Github</div>
-              <a class="contactLink card-body" href="https://github.com/Link1515" target="_blank">
-                <p class="card-text text-center">
-                  <i class="fa-brands fa-github"></i>
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="col-5 col-md-3 col-lg-2">
-            <div class="card text-white bg-primary mb-3">
-              <div class="card-header">Email</div>
-              <a class="contactLink card-body" href="mailto: h26281660@gmail.com">
-                <p class="card-text text-center">
-                  <i class="fa-solid fa-envelope"></i>
-                </p>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
     <!-- footer -->
     <footer class="text-center py-3">
-      <span class="text-light">&copy; Copyright 2022 by LIN YI-LUN</span>
+      <span>&copy; Copyright 2022 by LIN YI-LUN</span>
     </footer>
 
     <script src="./js/main.js"></script>

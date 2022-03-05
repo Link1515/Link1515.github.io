@@ -80,15 +80,18 @@
 }
 
 .contactLink {
-  padding: 2rem 0;
+  padding: 2rem 0.25rem;
+  color: transparent;
 
   i {
-    font-size: 3rem;
-    color: #fff;
+    font-size: 1.5rem;
+    color: #000;
     transition: transform 0.3s;
   }
 
   &:hover {
+    color: transparent;
+
     i {
       transform: scale(1.2);
     }
