@@ -6,7 +6,13 @@ export default {
       center: true,
       padding: '1rem',
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#23263A',
+        'primary-light': '#2B2D41',
+        secondary: '#FF4A57',
+      },
+    },
   },
   plugins: [],
 };

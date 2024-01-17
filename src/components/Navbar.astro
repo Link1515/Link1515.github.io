@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import iconBurger from '~/assets/images/icons/burger.svg';
+---
+
+<nav
+  id="navbar"
+  class="fixed left-0 top-0 z-40 h-14 w-full bg-primary transition-[box_shadow] duration-500"
+>
+  <div class="container flex h-full items-center">
+    <div
+      id="menu"
+      class="absolute left-0 top-[95%] grid w-full grid-rows-[0fr] overflow-hidden bg-primary shadow-md transition-[grid-template-rows] md:static md:h-full md:grid-rows-[1fr] md:bg-transparent md:shadow-none"
+    >
+      <div class="min-h-0">
+        <div
+          class="flex flex-col gap-2 px-4 py-4 text-xl md:flex-row md:justify-end md:gap-4 md:px-0"
+        >
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Experience</a>
+          <a href="#">Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <button id="menuBtn" class="ml-auto w-10 md:hidden">
+      <Image src={iconBurger} alt="menu-btn" />
+    </button>
+  </div>
+</nav>
+
+<script>
+  import { getHTMLElement } from '~/utils';
+
+  /**
+   * toggle mobile menu
+   */
+
+  const menuBtnEl = getHTMLElement<HTMLButtonElement>('#menuBtn');
+  const menuEl = getHTMLElement<HTMLButtonElement>('#menu');
+
+  menuBtnEl.addEventListener('click', () => {
+    menuEl.classList.toggle('!grid-rows-[1fr]');
+  });
+
+  /**
+   * navbar add shadow after scroll down
+   */
+
+  const navbarEl = getHTMLElement('#navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < 10) {
+      navbarEl.classList.remove('shadow-md');
+      return;
+    }
+
+    navbarEl.classList.add('shadow-md');
+  });
+</script>
