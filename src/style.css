@@ -10,4 +10,20 @@
 
     @apply scroll-pt-14 bg-primary text-white;
   }
+
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg font-semibold;
+  }
 }

@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import imageBanner from '~/assets/images/banner/banner-md.jpg';
+import iconGithub from '~/assets/images/icons/github.svg';
+import iconLinkedin from '~/assets/images/icons/linkedin.svg';
+import iconEmail from '~/assets/images/icons/email.svg';
+import iconWrite from '~/assets/images/icons/write.svg';
+---
+
+<div>
+  <div class="relative">
+    <div class="absolute left-0 top-0 h-full w-full bg-primary bg-opacity-40">
+    </div>
+    <Image src={imageBanner} class="h-[80vh] object-cover" alt="banner" />
+  </div>
+
+  <div
+    class="container relative -mt-60 flex flex-col gap-8 bg-primary-light p-6 md:flex-row md:p-12"
+  >
+    <div>
+      <!-- <img src="https://picsum.photos/350/400/?random=10" /> -->
+      <div class="h-[400px] w-[350px] max-w-full bg-neutral-400"></div>
+    </div>
+    <div>
+      <h4 class="mb-4 inline-block bg-secondary px-3 py-1">Hello World!</h4>
+      <h1 class="mb-1">I’m 林意倫 LIN, YI-LUN</h1>
+      <h3>網站開發工程師 Web Developer</h3>
+      <hr class="my-4" />
+      <p class="mb-2">
+        我是一位熱愛網站開發的工程師，注重代碼品質和最佳實踐，並且樂於學習和探索新的技
+        術，以保持在不斷演進的科技環境中的競爭力，專業領域主要包括前端和後端技術。
+      </p>
+      <p class="mb-2">
+        在前端方面具有豐富的經驗，擅長使用 Vue.js、Nuxt.js、Astro 和 Typescript
+        進行開發。這些工具和框架讓我能夠建立現代化、高效且具有優良使用者體驗的網頁應用程式。
+      </p>
+      <p>
+        在後端方面，我使用 Nodejs 的 Express 和 PHP 的
+        Laravel，能夠構建穩健且高效的後端系統，並致力於開發可擴展的應用程式，以滿足不斷變化的需求。
+      </p>
+      <hr class="my-4" />
+      <div class="flex justify-center gap-3">
+        <a href="https://github.com/Link1515" title="Github" target="_blank">
+          <Image src={iconGithub} width={28} alt="github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/link1515/"
+          title="LinkedIn"
+          target="_blank"
+        >
+          <Image src={iconLinkedin} width={28} alt="linkedin" />
+        </a>
+        <a href="mailto:mocliamglink@gmail.com" title="Email">
+          <Image src={iconEmail} width={28} alt="email" />
+        </a>
+        <a href="https://lynkishere.com" target="_blank" title="Blog">
+          <Image src={iconWrite} width={28} alt="linkedin" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
