@@ -1,13 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 import iconBurger from '~/assets/images/icons/burger.svg';
+import NavbarLink from '~/components/Navbar/Link.astro';
 ---
 
 <nav
   id="navbar"
-  class="fixed left-0 top-0 z-40 h-14 w-full bg-primary transition-[box_shadow] duration-500"
+  class="fixed left-0 top-0 z-40 h-14 w-full bg-primary bg-opacity-0 transition-[box_shadow] duration-500"
 >
   <div class="container flex h-full items-center">
+    <span class="shrink-0 select-none text-xl">&lt; / &gt;</span>
+
     <div
       id="menu"
       class="absolute left-0 top-[95%] grid w-full grid-rows-[0fr] overflow-hidden bg-primary shadow-md transition-[grid-template-rows] md:static md:h-full md:grid-rows-[1fr] md:bg-transparent md:shadow-none"
@@ -16,10 +19,10 @@ import iconBurger from '~/assets/images/icons/burger.svg';
         <div
           class="flex flex-col gap-2 px-4 py-4 text-xl md:flex-row md:justify-end md:gap-4 md:px-0"
         >
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Experience</a>
-          <a href="#">Projects</a>
+          <NavbarLink url="#">About</NavbarLink>
+          <NavbarLink url="#">Skills</NavbarLink>
+          <NavbarLink url="#">Experience</NavbarLink>
+          <NavbarLink url="#">Projects</NavbarLink>
         </div>
       </div>
     </div>
@@ -52,9 +55,11 @@ import iconBurger from '~/assets/images/icons/burger.svg';
   window.addEventListener('scroll', () => {
     if (window.scrollY < 10) {
       navbarEl.classList.remove('shadow-md');
+      navbarEl.classList.add('bg-opacity-0');
       return;
     }
 
+    navbarEl.classList.remove('bg-opacity-0');
     navbarEl.classList.add('shadow-md');
   });
 </script>

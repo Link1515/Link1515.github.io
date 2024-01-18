@@ -1,0 +1,13 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+---
+
+<a href={url} class="group transition-colors hover:text-secondary">
+  <span class="opacity-0 transition-opacity group-hover:opacity-100">/</span>
+  <slot />
+  <span class="opacity-0 transition-opacity group-hover:opacity-100">/</span>
+</a>
