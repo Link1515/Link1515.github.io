@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import BannerSocialLink from '~/components/Banner/SocialLink.astro';
 import imageBanner from '~/assets/images/banner/banner-md.jpg';
 import iconGithub from '~/assets/images/icons/github.svg';
 import iconLinkedin from '~/assets/images/icons/linkedin.svg';
@@ -40,22 +41,27 @@ import iconWrite from '~/assets/images/icons/write.svg';
       </p>
       <hr class="my-4" />
       <div class="flex justify-center gap-3">
-        <a href="https://github.com/Link1515" title="Github" target="_blank">
-          <Image src={iconGithub} width={28} alt="github" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/link1515/"
+        <BannerSocialLink
+          title="Github"
+          url="https://github.com/Link1515"
+          imageMeta={iconGithub}
+        />
+        <BannerSocialLink
           title="LinkedIn"
-          target="_blank"
-        >
-          <Image src={iconLinkedin} width={28} alt="linkedin" />
-        </a>
-        <a href="mailto:mocliamglink@gmail.com" title="Email">
-          <Image src={iconEmail} width={28} alt="email" />
-        </a>
-        <a href="https://lynkishere.com" target="_blank" title="Blog">
-          <Image src={iconWrite} width={28} alt="linkedin" />
-        </a>
+          url="https://www.linkedin.com/in/link1515/"
+          imageMeta={iconLinkedin}
+        />
+        <BannerSocialLink
+          title="Email"
+          url="mailto:mocliamglink@gmail.com"
+          imageMeta={iconEmail}
+          isTargetBlank={false}
+        />
+        <BannerSocialLink
+          title="Blog"
+          url="https://lynkishere.com"
+          imageMeta={iconWrite}
+        />
       </div>
     </div>
   </div>
