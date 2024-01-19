@@ -51,15 +51,19 @@ import NavbarLink from '~/components/Navbar/Link.astro';
    * navbar add shadow after scroll down
    */
 
+  const shadowClass = 'shadow-[0_0_6px_6px_rgba(255,74,87,0.3)]';
+
   const navbarEl = getHTMLElement('#navbar');
-  window.addEventListener('scroll', () => {
+  const toggleNavbarClass = () => {
     if (window.scrollY < 10) {
-      navbarEl.classList.remove('shadow-md');
+      navbarEl.classList.remove(shadowClass);
       navbarEl.classList.add('bg-opacity-0');
       return;
     }
 
+    navbarEl.classList.add(shadowClass);
     navbarEl.classList.remove('bg-opacity-0');
-    navbarEl.classList.add('shadow-md');
-  });
+  };
+  toggleNavbarClass();
+  window.addEventListener('scroll', toggleNavbarClass);
 </script>
