@@ -12,15 +12,15 @@
   }
 
   h1 {
-    @apply text-3xl font-semibold;
+    @apply text-4xl font-semibold;
   }
 
   h2 {
-    @apply text-2xl font-semibold;
+    @apply text-3xl font-semibold;
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-2xl;
   }
 
   h4 {

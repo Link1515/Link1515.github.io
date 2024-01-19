@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  title: string;
+  imageMeta: ImageMetadata;
+  list: string[];
+}
+
+const { title, imageMeta, list } = Astro.props;
+---
+
+<div class="w-full bg-primary-light px-14 py-8 shadow-xl">
+  <Image class="mx-auto mb-2 w-20" src={imageMeta} alt={title} />
+  <h3 class="mb-4 text-center font-semibold text-secondary">{title}</h3>
+  <div>
+    {list.map((item) => <p>{item}</p>)}
+  </div>
+</div>

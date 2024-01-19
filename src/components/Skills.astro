@@ -1,0 +1,40 @@
+---
+import SkillsCard from '~/components/Skills/Card.astro';
+import iconFrontend from '~/assets/images/icons/frontend.svg';
+import iconServer from '~/assets/images/icons/server.svg';
+import iconTerminal from '~/assets/images/icons/terminal.svg';
+---
+
+<section class="container mb-14">
+  <h1 class="mb-8 text-center">Professional Skills</h1>
+  <div class="mx-auto flex max-w-[992px] gap-4 lg:gap-12">
+    <SkillsCard
+      title="Frontend"
+      imageMeta={iconFrontend}
+      list={[
+        'HTML',
+        'CSS / SCSS',
+        'JavaScript / TypeScript',
+        'TailwindCSS',
+        'Vue / Nuxt',
+        'Astro',
+      ]}
+    />
+    <SkillsCard
+      title="Backend"
+      imageMeta={iconServer}
+      list={[
+        'MySQL',
+        'MongoDB',
+        'Redis',
+        'Node.js / Express.js',
+        'PHP / Laravel',
+      ]}
+    />
+    <SkillsCard
+      title="Others"
+      imageMeta={iconTerminal}
+      list={['Git', 'Docker', 'Linux Commands']}
+    />
+  </div>
+</section>
