@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import iconDiamond from '~/assets/images/icons/diamond.svg';
+
+interface Props {
+  additionalClass?: string[];
+}
+
+const { additionalClass } = Astro.props;
+---
+
+<div
+  class="absolute odd:-left-[10px] even:right-0 even:translate-x-[10px]"
+  class:list={additionalClass}
+>
+  <div class="flex items-center gap-4 text-nowrap text-lg">
+    <slot name="left-side" />
+    <div class="w-6">
+      <Image src={iconDiamond} class="w-6" alt="diamond" />
+    </div>
+    <slot name="right-side" />
+  </div>
+</div>

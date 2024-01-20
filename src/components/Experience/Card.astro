@@ -1,0 +1,23 @@
+---
+interface Props {
+  date: string;
+  title: string[];
+  subTitle?: string;
+  list: string[];
+}
+
+const { date, title, subTitle, list } = Astro.props;
+---
+
+<div
+  class="border-t-[6px] border-secondary bg-primary-light px-8 pb-6 pt-4 shadow-xl lg:px-10"
+>
+  <small class="mb-1 text-sm text-secondary">{date}</small>
+  <h3 class="font-semibold text-secondary">
+    {title.map((t) => <div>{t}</div>)}
+  </h3>
+  <h5 class="mb-2 text-xl">{subTitle}</h5>
+  <ul class="list-disc pl-4">
+    {list.map((item) => <li>{item}</li>)}
+  </ul>
+</div>

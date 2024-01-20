@@ -1,0 +1,72 @@
+---
+import ExperienceCard from '~/components/Experience/Card.astro';
+import ExperienceMoment from '~/components/Experience/Moment.astro';
+---
+
+<section class="container mb-14">
+  <h1 class="mb-8 text-center">Work Experience & Education</h1>
+  <div
+    class="relative mx-auto grid max-w-[992px] gap-8 md:gap-10 lg:gap-0 lg:pt-8"
+  >
+    <div class="md:w-[400px] md:even:ml-auto">
+      <ExperienceCard
+        date="2022 / 07 ～ now"
+        title={['聯合線上股份有限公司']}
+        subTitle="前端工程師"
+        list={[
+          '活動網站製作',
+          '內部網站重構與維護',
+          '協助處理維護網站後端',
+          '獨立開發大型專案 - UDN 讀書館',
+        ]}
+      />
+    </div>
+    <div class="md:w-[400px] md:even:ml-auto">
+      <ExperienceCard
+        title={['勞動部勞動力發展署', '泰山前端網頁開發技術班']}
+        date="2021 / 09 ~ 2022 / 03"
+        list={['學習網站前後端相關技能', '以全班第一名成績結訓']}
+      />
+    </div>
+    <div class="md:w-[400px] md:even:ml-auto">
+      <ExperienceCard
+        date="2020 / 07 ~ 2021 / 02"
+        title={['宜益有限公司']}
+        subTitle="機械工程師"
+        list={[
+          '設計農業機械機構',
+          '繪製現場焊接加工圖面',
+          '機構 3D 模擬與量測',
+        ]}
+      />
+    </div>
+    <div class="md:w-[400px] md:even:ml-auto">
+      <ExperienceCard
+        date="2016 / 09 ~ 2020 / 01"
+        title={['國立臺灣科技大學', '機械工程系']}
+        list={[
+          '修過基礎的 C++ 與 Matlab',
+          '實做 Arduino 電控機器人',
+          '參與服務性社團，寒暑假到偏鄉服務',
+        ]}
+      />
+    </div>
+
+    <div
+      class="absolute left-0 right-0 top-0 mx-auto hidden h-full w-1 bg-secondary lg:block"
+    >
+      <ExperienceMoment additionalClass={['top-[140px]']}>
+        <span slot="right-side">2022 / 7</span>
+      </ExperienceMoment>
+      <ExperienceMoment additionalClass={['top-[350px]']}>
+        <span slot="left-side">2021 / 9</span>
+      </ExperienceMoment>
+      <ExperienceMoment additionalClass={['top-[550px]']}>
+        <span slot="right-side">2020 / 7</span>
+      </ExperienceMoment>
+      <ExperienceMoment additionalClass={['top-[760px]']}>
+        <span slot="left-side">2016 / 9</span>
+      </ExperienceMoment>
+    </div>
+  </div>
+</section>
