@@ -1,0 +1,27 @@
+---
+import ProjectsCard from '~/components/Projects/Card.astro';
+import imageUdnLibrary from '~/assets/images/projects/udn-library.jpg';
+import imageTimeverse from '~/assets/images/projects/timeverse.jpg';
+import imageWomanRight from '~/assets/images/projects/woman-right.jpg';
+---
+
+<section class="container mb-14">
+  <h1 class="mb-8 text-center">Projects</h1>
+  <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3">
+    <ProjectsCard
+      title="UDN 讀書館"
+      imageMeta={imageUdnLibrary}
+      tags={['Nuxt', 'TypeScript', 'TailwindCSS']}
+    />
+    <ProjectsCard
+      title="UDN 時光宇宙"
+      imageMeta={imageTimeverse}
+      tags={['Nuxt', 'SCSS']}
+    />
+    <ProjectsCard
+      title="永齡基金會專案"
+      imageMeta={imageWomanRight}
+      tags={['Astro', 'TailwindCSS', 'GSAP']}
+    />
+  </div>
+</section>
