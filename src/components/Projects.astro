@@ -3,11 +3,14 @@ import ProjectsCard from '~/components/Projects/Card.astro';
 import imageUdnLibrary from '~/assets/images/projects/udn-library.jpg';
 import imageTimeverse from '~/assets/images/projects/timeverse.jpg';
 import imageWomanRight from '~/assets/images/projects/woman-right.jpg';
+import imageUdnData from '~/assets/images/projects/udn-data.jpg';
+import imageYungching from '~/assets/images/projects/yungching.jpg';
+import imageCourse from '~/assets/images/projects/course.jpg';
 ---
 
 <section class="container mb-14">
   <h1 class="mb-8 text-center">Projects</h1>
-  <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3">
+  <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3 lg:gap-12">
     <ProjectsCard
       title="UDN 讀書館"
       imageMeta={imageUdnLibrary}
@@ -22,6 +25,21 @@ import imageWomanRight from '~/assets/images/projects/woman-right.jpg';
       title="永齡基金會專案"
       imageMeta={imageWomanRight}
       tags={['Astro', 'TailwindCSS', 'GSAP']}
+    />
+    <ProjectsCard
+      title="聯合知識庫首頁"
+      imageMeta={imageUdnData}
+      tags={['Astro', 'SCSS']}
+    />
+    <ProjectsCard
+      title="永慶房屋徵文比賽"
+      imageMeta={imageYungching}
+      tags={['Astro', 'TailwindCSS']}
+    />
+    <ProjectsCard
+      title="張淑芬公益課"
+      imageMeta={imageCourse}
+      tags={['Astro', 'SCSS']}
     />
   </div>
 </section>
