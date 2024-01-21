@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import BannerSocialLink from '~/components/Banner/SocialLink.astro';
 import imageBanner from '~/assets/images/banner/banner-md.jpg';
+import imageMe from '~/assets/images/me.jpg';
 import iconGithub from '~/assets/images/icons/github.svg';
 import iconLinkedin from '~/assets/images/icons/linkedin.svg';
 import iconEmail from '~/assets/images/icons/email.svg';
@@ -12,16 +13,19 @@ import iconWrite from '~/assets/images/icons/write.svg';
   <div class="relative">
     <div class="absolute left-0 top-0 h-full w-full bg-primary bg-opacity-40">
     </div>
-    <Image src={imageBanner} class="h-[80vh] object-cover" alt="banner" />
+    <Image
+      src={imageBanner}
+      class="h-[80vh] w-full object-cover"
+      alt="banner"
+    />
   </div>
 
   <div id="about" class="container" data-aos="fade-up">
     <div
       class="relative -mt-60 flex flex-col gap-8 bg-primary-light p-6 shadow-xl md:flex-row md:p-12"
     >
-      <div>
-        <div class="mx-auto h-[400px] w-[350px] max-w-full bg-neutral-400">
-        </div>
+      <div class="mx-auto max-w-72">
+        <Image src={imageMe} alt="me" />
       </div>
       <div>
         <h4 class="mb-4 inline-block bg-secondary px-3 py-1">Hello World!</h4>
