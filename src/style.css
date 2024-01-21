@@ -8,7 +8,7 @@
       Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol';
 
-    @apply scroll-pt-14 bg-primary text-white;
+    @apply scroll-pt-14 scroll-smooth bg-primary text-white;
   }
 
   h1 {
