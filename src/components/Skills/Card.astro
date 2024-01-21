@@ -13,6 +13,7 @@ const { title, imageMeta, list } = Astro.props;
 
 <div
   class="flex w-full flex-col gap-4 bg-primary-light p-8 shadow-xl sm:flex-row sm:justify-center sm:gap-12 md:flex-col md:justify-start md:gap-6 lg:px-12"
+  data-aos="fade-up"
 >
   <div>
     <Image class="mx-auto mb-2 w-20" src={imageMeta} alt={title} />
