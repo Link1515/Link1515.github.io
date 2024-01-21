@@ -6,6 +6,9 @@ import imageWomanRight from '~/assets/images/projects/woman-right.jpg';
 import imageUdnData from '~/assets/images/projects/udn-data.jpg';
 import imageYungching from '~/assets/images/projects/yungching.jpg';
 import imageCourse from '~/assets/images/projects/course.jpg';
+import imageRedis from '~/assets/images/projects/redis.jpg';
+import imageLinebot from '~/assets/images/projects/linebot.jpg';
+import imagePomodoro from '~/assets/images/projects/pomodoro.jpg';
 ---
 
 <section class="container mb-14">
@@ -40,6 +43,27 @@ import imageCourse from '~/assets/images/projects/course.jpg';
       title="張淑芬公益課"
       imageMeta={imageCourse}
       tags={['Astro', 'SCSS']}
+    />
+  </div>
+</section>
+
+<section class="container mb-14">
+  <h1 class="mb-8 text-center">Side Projects</h1>
+  <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3 lg:gap-12">
+    <ProjectsCard
+      title="Redis 圖片快取"
+      imageMeta={imageRedis}
+      tags={['Express', 'TypeScript', 'Redis']}
+    />
+    <ProjectsCard
+      title="超級排 🏐 球場"
+      imageMeta={imageLinebot}
+      tags={['Typescript', 'PHP', 'Line SDK']}
+    />
+    <ProjectsCard
+      title="蕃茄鐘 Pomodoro"
+      imageMeta={imagePomodoro}
+      tags={['Vue', 'SCSS']}
     />
   </div>
 </section>
