@@ -4,21 +4,23 @@ import { Image } from 'astro:assets';
 interface Props {
   imageMeta: ImageMetadata;
   title: string;
+  url: string;
   tags: string[];
 }
 
-const { imageMeta, title, tags } = Astro.props;
+const { imageMeta, title, url, tags } = Astro.props;
 ---
 
-<div
-  class="bg-primary-light p-6 shadow-[0_0_15px_rgba(0,0,0,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_10px_rgba(255,74,87,0.6)]"
-  data-aos="fade-up"
->
-  <div class="mb-4 lg:h-32">
-    <Image class="h-full object-cover" src={imageMeta} alt={title} />
+<a href={url} data-aos="fade-up" target="_blank">
+  <div
+    class="h-full bg-primary-light p-6 shadow-[0_0_15px_rgba(0,0,0,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_10px_rgba(255,74,87,0.6)]"
+  >
+    <div class="mb-4 lg:h-32">
+      <Image class="h-full object-cover" src={imageMeta} alt={title} />
+    </div>
+    <h3 class="mb-2 font-semibold text-secondary">{title}</h3>
+    <ul class="flex flex-wrap gap-x-2 text-lg">
+      {tags.map((tag) => <li>#{tag}</li>)}
+    </ul>
   </div>
-  <h3 class="mb-2 font-semibold text-secondary">{title}</h3>
-  <ul class="flex flex-wrap gap-x-2 text-lg">
-    {tags.map((tag) => <li>#{tag}</li>)}
-  </ul>
-</div>
+</a>
