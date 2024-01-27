@@ -9,7 +9,7 @@ import NavbarLink from '~/components/Navbar/Link.astro';
   class="fixed left-0 top-0 z-40 h-14 w-full bg-primary bg-opacity-0 transition-all duration-500"
 >
   <div class="container flex h-full items-center">
-    <span class="shrink-0 select-none text-xl">&lt; / &gt;</span>
+    <button id="logo" class="shrink-0 select-none text-xl">&lt; / &gt;</button>
 
     <div
       id="menu"
@@ -66,4 +66,9 @@ import NavbarLink from '~/components/Navbar/Link.astro';
   };
   toggleNavbarClass();
   window.addEventListener('scroll', toggleNavbarClass);
+
+  const logoEl = getHTMLElement('#logo');
+  logoEl.addEventListener('click', () =>
+    scrollTo({ top: 0, behavior: 'smooth' }),
+  );
 </script>
