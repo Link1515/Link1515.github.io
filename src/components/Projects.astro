@@ -6,6 +6,7 @@ import imageWomanRight from '~/assets/images/projects/woman-right.jpg';
 import imageUdnData from '~/assets/images/projects/udn-data.jpg';
 import imageYungching from '~/assets/images/projects/yungching.jpg';
 import imageCourse from '~/assets/images/projects/course.jpg';
+import imageArt from '~/assets/images/projects/art.jpg';
 import imageRedis from '~/assets/images/projects/redis.jpg';
 import imageLinebot from '~/assets/images/projects/linebot.jpg';
 import imagePomodoro from '~/assets/images/projects/pomodoro.jpg';
@@ -14,12 +15,12 @@ import imagePomodoro from '~/assets/images/projects/pomodoro.jpg';
 <section id="projects" class="container mb-14 pt-6">
   <h1 class="mb-8 text-center">Projects</h1>
   <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3 lg:gap-12">
-    <ProjectsCard
+    <!-- <ProjectsCard
       title="UDN 讀書館"
       url="#"
       imageMeta={imageUdnLibrary}
       tags={['Nuxt', 'TypeScript', 'TailwindCSS']}
-    />
+    /> -->
     <ProjectsCard
       title="UDN 時光宇宙"
       url="https://timeverse.udn.com/"
@@ -50,6 +51,12 @@ import imagePomodoro from '~/assets/images/projects/pomodoro.jpg';
       imageMeta={imageCourse}
       tags={['Astro', 'SCSS']}
     />
+    <ProjectsCard
+      title="全民瘋藝術"
+      url="https://udn.com/upf/ubrand/2022_data/taitung_vistor/"
+      imageMeta={imageArt}
+      tags={['Astro', 'SCSS']}
+    />
   </div>
 </section>
 
@@ -66,13 +73,13 @@ import imagePomodoro from '~/assets/images/projects/pomodoro.jpg';
       title="超級排 🏐 球場"
       url="https://github.com/Link1515/linebot-volleyballCourtFinding-php"
       imageMeta={imageLinebot}
-      tags={['Typescript', 'PHP', 'Line SDK']}
+      tags={['PHP', 'Silm', 'Line SDK']}
     />
     <ProjectsCard
-      title="蕃茄鐘 Pomodoro"
-      url="https://github.com/Link1515/vue-pomodoro"
-      imageMeta={imagePomodoro}
-      tags={['Vue', 'SCSS']}
+      title="超級排 🏐 球場"
+      url="https://github.com/Link1515/linebot-volleyballCourtFinding"
+      imageMeta={imageLinebot}
+      tags={['TypeScript', 'Express', 'Line SDK']}
     />
   </div>
 </section>
