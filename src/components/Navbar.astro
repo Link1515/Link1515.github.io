@@ -61,7 +61,7 @@ import NavbarLink from '~/components/Navbar/Link.astro';
   window.addEventListener('scroll', scrollToggleNavbarStyle);
 
   /**
-   * toggle mobile menu
+   * toggle mobile menu when clicking menuBtn
    */
   const menuBtnEl = getHTMLElement<HTMLButtonElement>('#menuBtn');
   const menuEl = getHTMLElement<HTMLButtonElement>('#menu');
@@ -73,6 +73,14 @@ import NavbarLink from '~/components/Navbar/Link.astro';
       toggleNavbarClass(true);
     }
   });
+
+  /**
+   * hide menu when scrolling
+   */
+
+  window.addEventListener('scroll', () =>
+    menuEl.classList.remove('!grid-rows-[1fr]'),
+  );
 
   /**
    * scroll to top when click logo
