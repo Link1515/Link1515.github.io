@@ -37,36 +37,46 @@ import NavbarLink from '~/components/Navbar/Link.astro';
   import { getHTMLElement } from '~/utils';
 
   /**
+   * toggle navbar style
+   */
+  const navbarEl = getHTMLElement('#navbar');
+  const shadowClass = 'shadow-[0_0_6px_6px_rgba(255,74,87,0.3)]';
+
+  const toggleNavbarClass = (show: boolean) => {
+    if (show) {
+      navbarEl.classList.add(shadowClass);
+      navbarEl.classList.remove('bg-opacity-0');
+      return;
+    }
+
+    navbarEl.classList.remove(shadowClass);
+    navbarEl.classList.add('bg-opacity-0');
+  };
+
+  /**
+   * toggle navbar style when scroll
+   */
+  const scrollToggleNavbarStyle = () => toggleNavbarClass(window.scrollY > 10);
+  scrollToggleNavbarStyle();
+  window.addEventListener('scroll', scrollToggleNavbarStyle);
+
+  /**
    * toggle mobile menu
    */
-
   const menuBtnEl = getHTMLElement<HTMLButtonElement>('#menuBtn');
   const menuEl = getHTMLElement<HTMLButtonElement>('#menu');
 
   menuBtnEl.addEventListener('click', () => {
     menuEl.classList.toggle('!grid-rows-[1fr]');
+
+    if (menuEl.classList.contains('!grid-rows-[1fr]')) {
+      toggleNavbarClass(true);
+    }
   });
 
   /**
-   * navbar add shadow after scroll down
+   * scroll to top when click logo
    */
-
-  const shadowClass = 'shadow-[0_0_6px_6px_rgba(255,74,87,0.3)]';
-
-  const navbarEl = getHTMLElement('#navbar');
-  const toggleNavbarClass = () => {
-    if (window.scrollY < 10) {
-      navbarEl.classList.remove(shadowClass);
-      navbarEl.classList.add('bg-opacity-0');
-      return;
-    }
-
-    navbarEl.classList.add(shadowClass);
-    navbarEl.classList.remove('bg-opacity-0');
-  };
-  toggleNavbarClass();
-  window.addEventListener('scroll', toggleNavbarClass);
-
   const logoEl = getHTMLElement('#logo');
   logoEl.addEventListener('click', () =>
     scrollTo({ top: 0, behavior: 'smooth' }),
