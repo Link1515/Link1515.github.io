@@ -17,7 +17,7 @@ const { date, title, subTitle, list } = Astro.props;
     {title.map((t) => <div>{t}</div>)}
   </h3>
   <h5 class="mb-2 text-xl">{subTitle}</h5>
-  <ul class="list-disc pl-4">
+  <ul class="list-disc pl-4 text-lg">
     {list.map((item) => <li>{item}</li>)}
   </ul>
 </div>

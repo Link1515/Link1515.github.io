@@ -1,6 +1,10 @@
 ---
 import ExperienceCard from '~/components/Experience/Card.astro';
 import ExperienceMoment from '~/components/Experience/Moment.astro';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section id="experience" class="container mb-14 overflow-hidden pt-6">
@@ -11,43 +15,43 @@ import ExperienceMoment from '~/components/Experience/Moment.astro';
     <div class="md:w-[400px] md:even:ml-auto" data-aos="fade-left">
       <ExperienceCard
         date="2022 / 07 ～ Now"
-        title={['聯合線上股份有限公司']}
-        subTitle="前端工程師"
+        title={[t('experience.udn.title')]}
+        subTitle={t('job_title.frontend_developer')}
         list={[
-          '獨立開發大型專案',
-          '活動網站製作',
-          '內部網站重構與維護',
-          '維護網站後端',
+          t('experience.udn.feature_1'),
+          t('experience.udn.feature_2'),
+          t('experience.udn.feature_3'),
+          t('experience.udn.feature_4'),
         ]}
       />
     </div>
     <div class="md:w-[400px] md:even:ml-auto" data-aos="fade-right">
       <ExperienceCard
-        title={['勞動部勞動力發展署', '泰山前端網頁開發技術班']}
+        title={[t('experience.wda.title_1'), t('experience.wda.title_2')]}
         date="2021 / 09 ~ 2022 / 03"
-        list={['學習網站前後端相關技能', '以全班第一名成績結訓']}
+        list={[t('experience.wda.feature_1')]}
       />
     </div>
     <div class="md:w-[400px] md:even:ml-auto" data-aos="fade-left">
       <ExperienceCard
         date="2020 / 07 ~ 2021 / 02"
-        title={['宜益有限公司']}
-        subTitle="機械工程師"
+        title={[t('experience.ie.title')]}
+        subTitle={t('job_title.mechanical_engineer')}
         list={[
-          '設計農業機械機構',
-          '繪製現場焊接加工圖面',
-          '機構 3D 模擬與量測',
+          t('experience.ie.feature_1'),
+          t('experience.ie.feature_2'),
+          t('experience.ie.feature_3'),
         ]}
       />
     </div>
     <div class="md:w-[400px] md:even:ml-auto" data-aos="fade-right">
       <ExperienceCard
         date="2016 / 09 ~ 2020 / 01"
-        title={['國立臺灣科技大學', '機械工程系']}
+        title={[t('experience.ntust.title_1'), t('experience.ntust.title_2')]}
         list={[
-          '使用 Matlab 進行數學分析',
-          '實做 Arduino 電控機器人',
-          '參與服務性社團，寒暑假到偏鄉服務',
+          t('experience.ntust.feature_1'),
+          t('experience.ntust.feature_2'),
+          t('experience.ntust.feature_3'),
         ]}
       />
     </div>
