@@ -1,6 +1,5 @@
 ---
 import ExperienceCard from '~/components/Experience/Card.astro';
-import ExperienceMoment from '~/components/Experience/Moment.astro';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -10,7 +9,7 @@ const t = useTranslations(lang);
 <section id="experience" class="container mb-14 overflow-hidden pt-6">
   <h1 class="mb-8 text-center">Work Experience & Education</h1>
   <div
-    class="relative mx-auto grid max-w-[992px] gap-8 md:gap-10 lg:gap-0 lg:pt-8"
+    class="relative mx-auto grid max-w-[992px] gap-8 md:gap-10 lg:gap-0 lg:pt-24"
   >
     <div class="md:w-[400px] md:even:ml-auto" data-aos="fade-left">
       <ExperienceCard
@@ -29,7 +28,7 @@ const t = useTranslations(lang);
       <ExperienceCard
         title={[t('experience.wda.title_1'), t('experience.wda.title_2')]}
         date="2021 / 09 ~ 2022 / 03"
-        list={[t('experience.wda.feature_1')]}
+        list={[t('experience.wda.feature_1'), t('experience.wda.feature_2')]}
       />
     </div>
     <div class="md:w-[400px] md:even:ml-auto" data-aos="fade-left">
@@ -59,18 +58,10 @@ const t = useTranslations(lang);
     <div
       class="absolute left-0 right-0 top-0 mx-auto hidden h-full w-1 bg-secondary lg:block"
     >
-      <ExperienceMoment additionalClass={['top-[140px]']}>
-        <span slot="right-side">2022 / 07</span>
-      </ExperienceMoment>
-      <ExperienceMoment additionalClass={['top-[350px]']}>
-        <span slot="left-side">2021 / 09</span>
-      </ExperienceMoment>
-      <ExperienceMoment additionalClass={['top-[550px]']}>
-        <span slot="right-side">2020 / 07</span>
-      </ExperienceMoment>
-      <ExperienceMoment additionalClass={['top-[760px]']}>
-        <span slot="left-side">2016 / 09</span>
-      </ExperienceMoment>
+      <div
+        class="absolute top-0 h-12 w-1 origin-top -rotate-[30deg] bg-secondary"
+      >
+      </div>
     </div>
   </div>
 </section>
