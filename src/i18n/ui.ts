@@ -37,6 +37,23 @@ export const ui = {
       'Participate in service clubs to serve in rural areas',
     'job_title.frontend_developer': 'Frontend Developer',
     'job_title.mechanical_engineer': 'Mechanical Engineer',
+    'project.redis_image_cache.title': 'Redis Image Cache',
+    'project.redis_image_cache.description':
+      'Try setting up the Redis service with Express',
+    'project.super_volleyball_court_node.title': 'Super 🏐 Courts',
+    'project.super_volleyball_court_node.description':
+      'line bot which is used to find the surrounding volleyball courts',
+    'project.super_volleyball_court_php.title': 'Super 🏐 Courts',
+    'project.super_volleyball_court_php.description':
+      'Same functionality as the previous one, but with PHP',
+    'project.http_utils_php5.title': 'http-utils-php5',
+    'project.http_utils_php5.description':
+      'To make it easier to develop a lower version of PHP',
+    'project.db_utils_php5.title': 'db-utils-php5',
+    'project.db_utils_php5.description':
+      'It was also written for a lower version of PHP',
+    'project.blog.title': 'Tech Blog',
+    'project.blog.description': 'Write down things that I always forget',
   },
   'zh-TW': {
     name: 'I’m 林意倫 LIN, YI-LUN',
@@ -67,5 +84,19 @@ export const ui = {
     'experience.ntust.feature_3': '參與服務性社團，寒暑假到偏鄉服務',
     'job_title.frontend_developer': '前端工程師',
     'job_title.mechanical_engineer': '機械工程師',
+    'project.redis_image_cache.title': 'Redis 圖片快取',
+    'project.redis_image_cache.description': '試著用 Express 搭建 Redis 服務',
+    'project.super_volleyball_court_node.title': '超級排 🏐 球場',
+    'project.super_volleyball_court_node.description':
+      'line 機器人返回周圍的排球場',
+    'project.super_volleyball_court_php.title': '超級排 🏐 球場',
+    'project.super_volleyball_court_php.description':
+      '和前一個功能一樣，但改用 PHP',
+    'project.http_utils_php5.title': 'http-utils-php5',
+    'project.http_utils_php5.description': '為了更方便開發較低版本的 PHP',
+    'project.db_utils_php5.title': 'db-utils-php5',
+    'project.db_utils_php5.description': '也是為了較低版本的 PHP 寫的',
+    'project.blog.title': '技術部落格',
+    'project.blog.description': '記下一些我很容易忘的東西',
   },
 } as const;

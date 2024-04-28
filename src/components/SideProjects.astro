@@ -4,51 +4,55 @@ import imageRedis from '~/assets/images/projects/redis.jpg';
 import imageLinebot from '~/assets/images/projects/linebot.jpg';
 import imagePackagist from '~/assets/images/projects/packagist.jpg';
 import imageLynkishere from '~/assets/images/projects/lynkishere.jpg';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section id="projects" class="container mb-14 pt-6">
   <h1 class="mb-8 text-center">Side Projects</h1>
   <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3 lg:gap-12">
     <ProjectsCard
-      title="Redis 圖片快取"
+      title={t('project.redis_image_cache.title')}
       url="https://github.com/Link1515/image-redis-cache"
       imageMeta={imageRedis}
-      description="試著用 Express 搭建 Redis 服務"
+      description={t('project.redis_image_cache.description')}
       tags={['TypeScript', 'Express', 'Redis']}
     />
     <ProjectsCard
-      title="超級排 🏐 球場"
+      title={t('project.super_volleyball_court_node.title')}
       url="https://github.com/Link1515/linebot-volleyballCourtFinding"
       imageMeta={imageLinebot}
-      description="line 機器人返回周圍的排球場"
+      description={t('project.super_volleyball_court_node.description')}
       tags={['TypeScript', 'Express', 'Line SDK']}
     />
     <ProjectsCard
-      title="超級排 🏐 球場"
+      title={t('project.super_volleyball_court_php.title')}
       url="https://github.com/Link1515/linebot-volleyballCourtFinding-php"
       imageMeta={imageLinebot}
-      description="和前一個功能一樣，但改用 PHP"
+      description={t('project.super_volleyball_court_php.description')}
       tags={['PHP', 'Silm', 'Line SDK']}
     />
     <ProjectsCard
-      title="http-utils-php5"
+      title={t('project.http_utils_php5.title')}
       url="https://github.com/Link1515/http-utils-php5"
       imageMeta={imagePackagist}
-      description="為了更方便開發較低版本的 PHP"
+      description={t('project.http_utils_php5.description')}
       tags={['PHP', 'Packagist']}
     />
     <ProjectsCard
-      title="db-utils-php5"
+      title={t('project.db_utils_php5.title')}
       url="https://github.com/Link1515/db-utils-php5"
       imageMeta={imagePackagist}
-      description="也是為了較低版本的 PHP 寫的"
+      description={t('project.db_utils_php5.description')}
       tags={['PHP', 'Packagist']}
     />
     <ProjectsCard
-      title="技術部落格"
+      title={t('project.blog.title')}
       url="https://lynkishere.com/"
       imageMeta={imageLynkishere}
-      description="記下一些我很容易忘的東西"
+      description={t('project.blog.description')}
       tags={['Web', 'Frontend', 'Backend']}
     />
   </div>
