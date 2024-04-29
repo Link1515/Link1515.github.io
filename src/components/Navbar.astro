@@ -27,6 +27,26 @@ import NavbarLink from '~/components/Navbar/Link.astro';
           <NavbarLink url="#skills">Skills</NavbarLink>
           <NavbarLink url="#experience">Experience</NavbarLink>
           <NavbarLink url="#projects">Projects</NavbarLink>
+          <div class="flex self-center bg-primary-light text-base shadow-md">
+            <a
+              href="/"
+              class:list={[
+                'px-4',
+                'grid',
+                'place-items-center',
+                Astro.url.pathname === '/' ? 'bg-secondary' : '',
+              ]}>中</a
+            >
+            <a
+              href="/en"
+              class:list={[
+                'px-4',
+                'grid',
+                'place-items-center',
+                Astro.url.pathname === '/en' ? 'bg-secondary' : '',
+              ]}>EN</a
+            >
+          </div>
         </div>
       </div>
     </div>
