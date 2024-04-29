@@ -43,7 +43,7 @@ import NavbarLink from '~/components/Navbar/Link.astro';
                 'px-4',
                 'grid',
                 'place-items-center',
-                Astro.url.pathname === '/en' ? 'bg-secondary' : '',
+                Astro.url.pathname.includes('en') ? 'bg-secondary' : '',
               ]}>EN</a
             >
           </div>
