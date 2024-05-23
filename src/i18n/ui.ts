@@ -34,7 +34,7 @@ export const ui = {
     'experience.ntust.feature_1': 'Mathematical analysis using Matlab',
     'experience.ntust.feature_2': 'Make Arduino electronic controlled robot',
     'experience.ntust.feature_3':
-      'Participate in service clubs to serve in rural areas',
+      'Volunteer with service clubs to provide free appliance repair services in remote areas during winter and summer breaks.',
     'job_title.frontend_developer': 'Frontend Developer',
     'job_title.mechanical_engineer': 'Mechanical Engineer',
     'project.redis_image_cache.title': 'Redis Image Cache',
@@ -81,7 +81,7 @@ export const ui = {
     'experience.ntust.title_2': '機械工程系',
     'experience.ntust.feature_1': '使用 Matlab 進行數學分析',
     'experience.ntust.feature_2': '實做 Arduino 電控機器人',
-    'experience.ntust.feature_3': '參與服務性社團，寒暑假到偏鄉服務',
+    'experience.ntust.feature_3': '參與服務性社團，寒暑假到偏鄉進行免費電器維修服務',
     'job_title.frontend_developer': '前端工程師',
     'job_title.mechanical_engineer': '機械工程師',
     'project.redis_image_cache.title': 'Redis 圖片快取',
