@@ -7,19 +7,19 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section id="projects" class="container mb-14 pt-6 text-lg">
+<section id="projects" class="container mb-14 pt-6 text-lg" data-aos="fade-up">
   <h1 class="mb-8 text-center">Work Projects</h1>
   <div
     class="mx-auto max-w-[992px] bg-primary-light p-6 shadow-[0_0_15px_rgba(0,0,0,0.3)] lg:p-12"
   >
-    <div class="mb-4">
+    <div>
       <Image
         class="h-full object-cover"
         src={imageUdnLibrary}
         alt="udn-library"
       />
     </div>
-    <h3 class="mb-2 font-semibold text-secondary">
+    <h3 class="mb-4 bg-secondary py-1 text-center font-semibold">
       {t('project.udn_library.title')}
     </h3>
     <p class="mb-6 text-lg">{t('project.udn_library.description')}</p>

@@ -39,7 +39,7 @@ export const ui = {
     'job_title.mechanical_engineer': 'Mechanical Engineer',
     'project.features': 'Features',
     'project.highlights': 'Highlights',
-    'project.explore': 'Explore',
+    'project.explore': 'EXPLORE',
     'project.udn_library.title': 'UDN Library',
     'project.udn_library.description':
       'A digital ebook lending platform specifically designed for major institutions and enterprises, dedicated to providing a comprehensive digital reading experience. The platform offers a wide variety of digital resources, including a rich collection of ebooks, e-magazines, e-newspapers, and multimedia services, catering to the diverse reading needs of users. Users can easily search and borrow through the platform, enjoying a seamless reading experience anytime, anywhere, on various devices.',
