@@ -37,6 +37,29 @@ export const ui = {
       'Volunteer with service clubs to provide free appliance repair services in remote areas during winter and summer breaks.',
     'job_title.frontend_developer': 'Frontend Developer',
     'job_title.mechanical_engineer': 'Mechanical Engineer',
+    'project.features': 'Features',
+    'project.highlights': 'Highlights',
+    'project.explore': 'Explore',
+    'project.udn_library.title': 'UDN Library',
+    'project.udn_library.description':
+      'A digital ebook lending platform specifically designed for major institutions and enterprises, dedicated to providing a comprehensive digital reading experience. The platform offers a wide variety of digital resources, including a rich collection of ebooks, e-magazines, e-newspapers, and multimedia services, catering to the diverse reading needs of users. Users can easily search and borrow through the platform, enjoying a seamless reading experience anytime, anywhere, on various devices.',
+    'project.udn_library.feature_1':
+      'Online general ebook lending and points-based lending',
+    'project.udn_library.feature_2': 'Online ebook reservation',
+    'project.udn_library.feature_3': 'Favorite books and recommend books.',
+    'project.udn_library.feature_4': 'Multi-criteria book search',
+    'project.udn_library.feature_5': 'Supports Multiple Languages',
+    'project.udn_library.feature_6':
+      'User Registration and Login Authentication',
+    'project.udn_library.highlight_1':
+      'Independently Develop Frontend Features',
+    'project.udn_library.highlight_2': 'Develop a New Project from Scratch',
+    'project.udn_library.highlight_3':
+      'To solve SEO issues, use the Nuxt framework for Server-Side Rendering (SSR)',
+    'project.udn_library.highlight_4':
+      'To improve code readability and maintainability, use TypeScript',
+    'project.udn_library.highlight_5':
+      'All component styles are crafted using TailwindCSS',
     'project.redis_image_cache.title': 'Redis Image Cache',
     'project.redis_image_cache.description':
       'Try setting up the Redis service with Express',
@@ -81,9 +104,29 @@ export const ui = {
     'experience.ntust.title_2': '機械工程系',
     'experience.ntust.feature_1': '使用 Matlab 進行數學分析',
     'experience.ntust.feature_2': '實做 Arduino 電控機器人',
-    'experience.ntust.feature_3': '參與服務性社團，寒暑假到偏鄉進行免費電器維修服務',
+    'experience.ntust.feature_3':
+      '參與服務性社團，寒暑假到偏鄉進行免費電器維修服務',
     'job_title.frontend_developer': '前端工程師',
     'job_title.mechanical_engineer': '機械工程師',
+    'project.features': '功能介紹',
+    'project.highlights': '專案亮點',
+    'project.explore': '前往查看',
+    'project.udn_library.title': 'UDN 讀書館',
+    'project.udn_library.description':
+      '專為各大院校與企業設計的線上電子書籍借閱平台，致力於提供全方位的數位閱讀體驗。平台內涵蓋了多種類型的數位資源，包括豐富的電子書、電子雜誌、電子報紙以及多媒體影音服務，滿足不同用戶的閱讀需求。使用者可以輕鬆地透過平台進行搜尋、借閱，並在各種設備上隨時隨地享受流暢的閱讀體驗。',
+    'project.udn_library.feature_1': '電子書籍線上一般借閱與點數借閱',
+    'project.udn_library.feature_2': '電子書籍線上預約',
+    'project.udn_library.feature_3': '收藏書籍與推薦書籍',
+    'project.udn_library.feature_4': '書籍多條件篩選查詢',
+    'project.udn_library.feature_5': '支持多國語系',
+    'project.udn_library.feature_6': '用戶註冊登入驗證',
+    'project.udn_library.highlight_1': '獨立開發前端相關功能',
+    'project.udn_library.highlight_2': '從 0 到 1 開發新專案',
+    'project.udn_library.highlight_3':
+      '為解決 SEO 問題，採用 Nuxt 框架進行 SSR',
+    'project.udn_library.highlight_4':
+      '為增加程式碼可讀性與提昇可維護行，採用 TypeScript',
+    'project.udn_library.highlight_5': '所有組件樣式皆由 TailwindCSS 進行刻板',
     'project.redis_image_cache.title': 'Redis 圖片快取',
     'project.redis_image_cache.description': '試著用 Express 搭建 Redis 服務',
     'project.super_volleyball_court_node.title': '超級排 🏐 球場',

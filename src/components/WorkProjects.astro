@@ -1,6 +1,10 @@
 ---
 import { Image } from 'astro:assets';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import imageUdnLibrary from '~/assets/images/projects/udn-library.jpg';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section id="projects" class="container mb-14 pt-6 text-lg">
@@ -15,32 +19,35 @@ import imageUdnLibrary from '~/assets/images/projects/udn-library.jpg';
         alt="udn-library"
       />
     </div>
-    <h3 class="mb-2 font-semibold text-secondary">UDN 讀書館</h3>
-    <p class="mb-6 text-lg">
-      專為各大院校與企業設計的線上電子書籍借閱平台，致力於提供全方位的數位閱讀體驗。平台內涵蓋了多種類型的數位資源，包括豐富的電子書、電子雜誌、電子報紙以及多媒體影音服務，滿足不同用戶的閱讀需求。使用者可以輕鬆地透過平台進行搜尋、借閱，並在各種設備上隨時隨地享受流暢的閱讀體驗。
-    </p>
+    <h3 class="mb-2 font-semibold text-secondary">
+      {t('project.udn_library.title')}
+    </h3>
+    <p class="mb-6 text-lg">{t('project.udn_library.description')}</p>
 
     <div class="mb-12 grid gap-4 lg:grid-cols-2">
       <div>
-        <h4 class="mb-2 bg-secondary text-center">功能介紹</h4>
+        <h4 class="mb-2 bg-secondary py-0.5 text-center">
+          {t('project.features')}
+        </h4>
         <ul class="list-disc pl-6 pr-2">
-          <li>電子書籍線上一般借閱與點數借閱</li>
-          <li>電子書籍線上預約</li>
-          <li>收藏書籍與推薦書籍</li>
-          <li>書籍多條件篩選查詢</li>
-          <li>支持多國語系</li>
-          <li>用戶註冊登入驗證</li>
-          <li>OAuth 第三方登入驗證</li>
+          <li>{t('project.udn_library.feature_1')}</li>
+          <li>{t('project.udn_library.feature_2')}</li>
+          <li>{t('project.udn_library.feature_3')}</li>
+          <li>{t('project.udn_library.feature_4')}</li>
+          <li>{t('project.udn_library.feature_5')}</li>
+          <li>{t('project.udn_library.feature_6')}</li>
         </ul>
       </div>
       <div>
-        <h4 class="mb-2 bg-secondary text-center">專案亮點</h4>
+        <h4 class="mb-2 bg-secondary py-0.5 text-center">
+          {t('project.highlights')}
+        </h4>
         <ul class="list-disc pl-6 pr-2">
-          <li>獨立開發前端相關功能</li>
-          <li>建立新專案，從 0 到 1 打造所有新界面</li>
-          <li>為解決 SEO 問題，採用 Nuxt 框架進行 SSR</li>
-          <li>為增加程式碼可讀性與提昇可維護行，採用 TypeScript</li>
-          <li>所有組件樣式皆由 TailwindCSS 進行刻板</li>
+          <li>{t('project.udn_library.highlight_1')}</li>
+          <li>{t('project.udn_library.highlight_2')}</li>
+          <li>{t('project.udn_library.highlight_3')}</li>
+          <li>{t('project.udn_library.highlight_4')}</li>
+          <li>{t('project.udn_library.highlight_5')}</li>
         </ul>
       </div>
     </div>
@@ -48,8 +55,8 @@ import imageUdnLibrary from '~/assets/images/projects/udn-library.jpg';
     <div class="text-center">
       <a
         href="https://reading.udn.com/udnlib/reading"
-        class="border-4 border-secondary px-8 py-4 text-xl font-bold transition-colors hover:bg-secondary"
-        target="_blank">前往查看 ></a
+        class="inline-block border-4 border-secondary px-8 py-4 text-xl font-bold transition-colors hover:bg-secondary"
+        target="_blank">{t('project.explore')} ></a
       >
     </div>
   </div>
