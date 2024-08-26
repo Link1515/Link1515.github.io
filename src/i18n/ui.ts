@@ -125,7 +125,7 @@ export const ui = {
     'project.udn_library.highlight_3':
       '為解決 SEO 問題，採用 Nuxt 框架進行 SSR',
     'project.udn_library.highlight_4':
-      '為增加程式碼可讀性與提昇可維護行，採用 TypeScript',
+      '為增加程式碼可讀性與提昇可維護性，採用 TypeScript',
     'project.udn_library.highlight_5': '所有組件樣式皆由 TailwindCSS 進行刻板',
     'project.redis_image_cache.title': 'Redis 圖片快取',
     'project.redis_image_cache.description': '試著用 Express 搭建 Redis 服務',
