@@ -41,6 +41,7 @@ export const ui = {
     'project.features': 'Features',
     'project.highlights': 'Highlights',
     'project.explore': 'EXPLORE',
+    'project.builtUsing': 'Built using',
     'project.udn_library.title': 'UDN Library',
     'project.udn_library.description':
       'A digital ebook lending platform specifically designed for major institutions and enterprises, dedicated to providing a comprehensive digital reading experience. The platform offers a wide variety of digital resources, including a rich collection of ebooks, e-magazines, e-newspapers, and multimedia services, catering to the diverse reading needs of users. Users can easily search and borrow through the platform, enjoying a seamless reading experience anytime, anywhere, on various devices.',
@@ -111,6 +112,7 @@ export const ui = {
     'project.features': '功能介紹',
     'project.highlights': '專案亮點',
     'project.explore': '前往查看',
+    'project.builtUsing': '使用技術',
     'project.udn_library.title': 'UDN 讀書館',
     'project.udn_library.description':
       '專為各大院校與企業設計的線上電子書籍借閱平台，致力於提供全方位的數位閱讀體驗。平台內涵蓋了多種類型的數位資源，包括豐富的電子書、電子雜誌、電子報紙以及多媒體影音服務，滿足不同用戶的閱讀需求。使用者可以輕鬆地透過平台進行搜尋、借閱，並在各種設備上隨時隨地享受流暢的閱讀體驗。',
