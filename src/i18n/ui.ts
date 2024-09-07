@@ -16,10 +16,11 @@ export const ui = {
     self_intro_3:
       "For backend development, I am proficient in using Node.js's Express and PHP's Laravel to build robust and efficient backend systems. I am also passionate about developing scalable applications to meet ever-changing needs.",
     'experience.udn.title': 'udn.com Co.Ltd.',
-    'experience.udn.feature_1': 'Independently develop large projects',
-    'experience.udn.feature_2': 'Event website making',
-    'experience.udn.feature_3': 'Internal website refactoring and maintenance',
-    'experience.udn.feature_4': 'Maintain the backend of the website',
+    'experience.udn.feature_1': 'Possess the ability to develop independently',
+    'experience.udn.feature_2':
+      'Introducing TypeScript improves the maintainability of the project',
+    'experience.udn.feature_3':
+      'Introducing Astro.js improves development efficiency by approximately 30%',
     'experience.wda.title_1': 'Workforce Development Agency',
     'experience.wda.title_2': 'Web Development Technology Class',
     'experience.wda.feature_1': 'Learn web development skills',
@@ -88,10 +89,9 @@ export const ui = {
     self_intro_3:
       '在後端方面，我使用 Nodejs 的 Express 和 PHP 的 Laravel，能夠構建穩健且高效的後端系統，並致力於開發可擴展的應用程式，以滿足不斷變化的需求。',
     'experience.udn.title': '聯合線上股份有限公司',
-    'experience.udn.feature_1': '獨立開發大型專案',
-    'experience.udn.feature_2': '活動網站製作',
-    'experience.udn.feature_3': '內部網站重構與維護',
-    'experience.udn.feature_4': '維護網站後端',
+    'experience.udn.feature_1': '具備獨立開發能力',
+    'experience.udn.feature_2': '導入 Typescript 提昇專案可維護性',
+    'experience.udn.feature_3': '導入 Astro.js 提昇約 30% 開發效率',
     'experience.wda.title_1': '勞動部勞動力發展署',
     'experience.wda.title_2': '泰山前端網頁開發技術班',
     'experience.wda.feature_1': '學習網站前後端相關技能',
