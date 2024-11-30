@@ -1,9 +1,9 @@
 ---
 import ProjectsCard from '~/components/Projects/Card.astro';
-import imageRedis from '~/assets/images/projects/redis.jpg';
 import imageLinebot from '~/assets/images/projects/linebot.jpg';
 import imagePackagist from '~/assets/images/projects/packagist.jpg';
 import imageLynkishere from '~/assets/images/projects/lynkishere.jpg';
+import imageHexoTheme from '~/assets/images/projects/hexo-theme.jpg';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -13,13 +13,6 @@ const t = useTranslations(lang);
 <section class="container mb-14 pt-6">
   <h1 class="mb-8 text-center">Side Projects</h1>
   <div class="mx-auto grid max-w-[992px] gap-8 lg:grid-cols-3 lg:gap-12">
-    <ProjectsCard
-      title={t('project.redis_image_cache.title')}
-      url="https://github.com/Link1515/image-redis-cache"
-      imageMeta={imageRedis}
-      description={t('project.redis_image_cache.description')}
-      tags={['TypeScript', 'Express', 'Redis']}
-    />
     <ProjectsCard
       title={t('project.super_volleyball_court_node.title')}
       url="https://github.com/Link1515/linebot-volleyballCourtFinding"
@@ -50,10 +43,17 @@ const t = useTranslations(lang);
     />
     <ProjectsCard
       title={t('project.blog.title')}
-      url="https://lynkishere.com/"
+      url="https://link1515.github.io/tech-blog"
       imageMeta={imageLynkishere}
       description={t('project.blog.description')}
       tags={['Web', 'Frontend', 'Backend']}
+    />
+    <ProjectsCard
+      title={t('project.hexo_theme.title')}
+      url="https://github.com/Link1515/hexo-bootstrap-theme"
+      imageMeta={imageHexoTheme}
+      description={t('project.hexo_theme.description')}
+      tags={['EJS', 'Bootstrap']}
     />
   </div>
 </section>

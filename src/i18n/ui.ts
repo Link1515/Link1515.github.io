@@ -62,9 +62,6 @@ export const ui = {
       'To improve code readability and maintainability, use TypeScript',
     'project.udn_library.highlight_5':
       'All component styles are crafted using TailwindCSS',
-    'project.redis_image_cache.title': 'Redis Image Cache',
-    'project.redis_image_cache.description':
-      'Try setting up the Redis service with Express',
     'project.super_volleyball_court_node.title': 'Super 🏐 Courts',
     'project.super_volleyball_court_node.description':
       'line bot which is used to find the surrounding volleyball courts',
@@ -78,7 +75,10 @@ export const ui = {
     'project.db_utils_php5.description':
       'It was also written for a lower version of PHP',
     'project.blog.title': 'Tech Blog',
-    'project.blog.description': 'Write down things that I always forget',
+    'project.blog.description':
+      'The blog where I jot down things I tend to forget.',
+    'project.hexo_theme.title': 'Hexo Theme',
+    'project.hexo_theme.description': 'The Hexo theme I designed for my blog.',
   },
   'zh-TW': {
     name: 'I’m 林意倫 LIN, YI-LUN',
@@ -129,8 +129,6 @@ export const ui = {
     'project.udn_library.highlight_4':
       '為增加程式碼可讀性與提昇可維護性，採用 TypeScript',
     'project.udn_library.highlight_5': '所有組件樣式皆由 TailwindCSS 進行刻板',
-    'project.redis_image_cache.title': 'Redis 圖片快取',
-    'project.redis_image_cache.description': '試著用 Express 搭建 Redis 服務',
     'project.super_volleyball_court_node.title': '超級排 🏐 球場',
     'project.super_volleyball_court_node.description':
       'line 機器人返回周圍的排球場',
@@ -143,5 +141,7 @@ export const ui = {
     'project.db_utils_php5.description': '也是為了較低版本的 PHP 寫的',
     'project.blog.title': '技術部落格',
     'project.blog.description': '記下一些我很容易忘的東西',
+    'project.hexo_theme.title': 'Hexo 主題',
+    'project.hexo_theme.description': '寫個主題套用到技術部落格',
   },
 } as const;

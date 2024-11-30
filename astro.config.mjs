@@ -3,7 +3,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://business.lynkishere.com',
   integrations: [
     tailwind({
       applyBaseStyles: false,
