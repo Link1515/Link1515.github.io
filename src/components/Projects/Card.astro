@@ -28,7 +28,14 @@ const { imageMeta, title, url, tags, description } = Astro.props;
       {description}
     </p>
     <ul class="flex flex-wrap gap-x-2">
-      {tags.map((tag) => <li>#{tag}</li>)}
+      {
+        tags.map((tag) => (
+          <li>
+            <span class="font-bold">#</span>
+            <span>{tag}</span>
+          </li>
+        ))
+      }
     </ul>
   </div>
 </a>
