@@ -86,12 +86,12 @@ export const ui = {
     self_intro_1:
       '我是一位熱愛網站開發的工程師，注重代碼品質和最佳實踐，並且樂於學習和探索新的技術，以保持在不斷演進的科技環境中的競爭力，專業領域主要包括前端和後端技術。',
     self_intro_2:
-      '在前端方面具我有豐富的經驗，擅長使用 Vue.js、Nuxt.js、Astro 和 Typescript 進行開發。這些工具和框架讓我能夠建立現代化、高效且具有優良使用者體驗的網頁應用程式。',
+      '在前端方面具我有豐富的經驗，擅長使用 Vue.js、Nuxt.js、Astro 和 TypeScript 進行開發。這些工具和框架讓我能夠建立現代化、高效且具有優良使用者體驗的網頁應用程式。',
     self_intro_3:
       '在後端方面，我使用 Nodejs 的 Express 和 PHP 的 Laravel，能夠構建穩健且高效的後端系統，並致力於開發可擴展的應用程式，以滿足不斷變化的需求。',
     'experience.udn.title': '聯合線上股份有限公司',
     'experience.udn.feature_1': '具備獨立開發能力',
-    'experience.udn.feature_2': '導入 Typescript 提昇專案可維護性',
+    'experience.udn.feature_2': '導入 TypeScript 提昇專案可維護性',
     'experience.udn.feature_3': '導入 Astro.js 提昇約 30% 開發效率',
     'experience.wda.title_1': '勞動部勞動力發展署',
     'experience.wda.title_2': '泰山前端網頁開發技術班',
